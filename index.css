@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+hr {
+  color: blue;
+  height: 10px;
+  background-color: blue;
+}
+
+.h4 {
+  color: blueviolet;
+}
+
+.Metro-maus1 {
+  height: 90px;
+  width: 180px;
+}
+
+div {
+  display: inline-block;
+  color: #ebeaea;
+  text-align: left;
+}
+
+.nazi {
+  height: 36px;
+}
+
+@media (max-width:991px) {
+
+  .article-item,
+  .article-item:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width:575px) {
+  body {
+    background-color: #fff;
+    margin: 0;
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  h3 {
+    background: #484747;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.th-nazva{
+  color:black;
+  text-align: center;
+  font-size: larger;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.part-div-left {
+  width: 70%;
+  background-color: red;
+}
+
+.part-div-right {
+  width: 29.7%;
+  background-color: blue;
+}
+
+body{
+  vertical-align: top;
+}
+
+.part-div {
+  vertical-align: top;
+  display: inline-block;
+  min-height: 100vh;
+}
+
+.part-div-right{
+  height: 100%;
+}
+.header{
+  background-color: red;
+}
+.footer{
+  background-color: blueviolet;
+  color: black;
+}

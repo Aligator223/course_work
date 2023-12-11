@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Panzer VIII Maus</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <div class="part-div part-div-left">
+        <div class="header">
+            <div>
+                <div>
+                    <h1>
+                        Panzer VIII Maus
+                    </h1>
+
+                </div>
+
+                <img class="nazi"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+        </div>
+        <div class="content">
+        
+        </div>
+        <hr align="left">
+        
+        <div>
+            <h4>Panzer VIII «Maus»</h4>
+            <p>
+                ((«Маус» нім. «Миша») (Sd.Kfz 205), інша назва — VK70.01/Porsche Type 205) — надважкий танк,
+                спроектований в Третьому рейху в період з 1942 по 1945 роки під<br> керівництвом Фердинанда Порше. Є
+                найбільшим за масою танком з усіх, коли-небудь втілених в металі (бойова маса - 188,9 тонн). Було
+                побудовано всього два екземпляри машини. У бойових діях участі<br> не брали. На даний момент в світі
+                зберігся тільки один танк Маус, зібраний з частин обох примірників, в Бронетанковий музей в кубинці
+            </p>
+            <div><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Metro-maus1.jpg/315px-Metro-maus1.jpg">
+            </div>
+        </div>
+        <hr align="left">
+        <div>
+            <h2>
+                Технічні показники
+            </h2>
+            <p>
+                Сидіння водія та радіо-оператора розташовані між головними паливними баками. Позаду них — головний
+                двигун,
+                між<br> повітряними насосами і радіаторами. Далі до корми розташований генератор, з укладанням
+                боєприпасів в
+                спонсонах з<br> обох сторін. В спонсоні з передньо-правої сторони генератора — допоміжний двигун, з
+                акумуляторними батареями до<br> нього — в задній частині. У кормі корпусу, також в спонсонах,
+                розташовуються
+                мотори електроприводу. Трансмісія<br> знаходиться в глибокій частині корпусу між електромоторами, позаду
+                генератора.
+                <br>
+                Танк був виконаний на високому технологічному рівні. Застосування багатокаткової ходової частини в парі
+                з<br> гусеницями завширшки 1100 мм забезпечило «Маусу» досить низький питомий тиск на ґрунт, не набагато
+                більше ніж у<br> звичайних німецьких важких танків. Основною його особливістю стало потужне кругове
+                бронювання і двохгарматне<br> озброєння, а також використання електромеханічної трансмісії, яка
+                складалася з
+                двох електроприводів лівої і правої<br> гусениць. Тягові електродвигуни живилися струмом від двох
+                генераторів, розташованих в моторному відділенні. Дві<br>незалежні один від одного електросистеми
+                передавали
+                крутний момент від двигунів до провідних коліс через<br> двоступінчастий редуктор. Екіпаж машини
+                становив
+                шість чоловік, двоє з яких розташовувалися у відділенні<br> управління в передній частині корпусу, а
+                четверо
+                перебували у башті.
+            </p>
+        </div>
+        <img
+            src="data:image/jpeg;base64,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">
+        <hr align="left">
+        <div>
+            <h2>
+                Історія створення і доля проекту
+            </h2>
+            <div>
+                <p>
+                    У своїй книзі «Спогади солдата» Гейнц Гудеріан писав:<br>
+                    <br>
+                    Через день я виїхав на потязі в Летцен, де тимчасово розташувався мій штаб. Там я оглянув місцеві
+                    казарми. 13 травня я мав бесіду із Шпеєром, а в другій половині дня був на доповіді <br>у Гітлера. 1
+                    травня Гітлеру показали дерев'яну модель «мишеня» — танка професора Порше та фірми Круппа, на якому
+                    мали
+                    намір встановити 150-мм гармату. Загальна вага танка мала <br>досягти 175 тонн. Потрібно було
+                    розраховувати на те, що він насправді після конструктивних змін за вказівками Гітлера буде важити
+                    200 т.
+                    Модель не мала жодного кулемета для <br>ведення ближнього бою. Вже з цієї причини я повинен був
+                    відхилити її. Конструкція мала той же самий недолік, який робив «Фердинанд» Порше непридатним для
+                    ведення ближнього бою.<br> Але ж танку врешті-решт неминуче доводиться вести ближній бій, бо він діє
+                    у
+                    взаємодії з піхотою. Почалися бурхливі суперечки, тому що всі присутні, крім мене, знаходили
+                    «мишеня»
+                    <br>прекрасним. Він обіцяв бути саме «гігантським» …[1]
+                    <br>
+                    У 1942 році з ініціативи Гітлера почалися роботи над «танком прориву» з максимально можливим
+                    бронезахистом. У створенні машини узяли участь відразу кілька фірм: корпус і башту<br> виготовляла
+                    фірма
+                    «Крупп», «Даймлер-Бенц» відповідала за рухову установку, а «Сіменс» — за елементи трансмісії.
+                    Загальне
+                    складання виконувалось на заводі фірми «Алкетт». Проект «тип<br> 205», розроблений Фердинандом
+                    Порше,
+                    був реалізований в 1944 році у вигляді двох дослідних зразків танка «Маус».
+                    <br>
+                    Подальші роботи з випуску десяти серійних танків були припинені за вказівкою самого Гітлера, тому що
+                    у
+                    Німеччині не вистачало виробничих потужностей для випуску інших, важливіших <br>видів зброї.
+                    <br>
+                    Повнорозмірний макет танка був представлений Гітлеру 14 травня 1943, а перший прототип «Мауса»,
+                    оснащений авіаційним двигуном «Даймлер-Бенц» МВ 509 і дерев'яною баштою, поступив на<br> ходові
+                    випробування у грудні 1943. Після їх досить задовільних результатів танк був обладнаний справжньою
+                    баштою для артилерійських стрільб і повним комплектом внутрішнього<br> обладнання. Другий прототип
+                    був
+                    обладнаний дизельним двигуном «Даймлер-Бенц» МВ 517, як виявилося згодом, примхливим та ненадійним в
+                    експлуатації.
+                    <br>
+                    <br>
+                    Куммерсдорф-гут, Новий Verskraft, зал для Panzerkampfwagen VIII "Маус", 2013<br>
+                    Загальна маса більше 180 тонн виключала можливість переходу «Мауса» через річки по автомобільних
+                    мостах.
+                    Тому передбачалося переправляти танки попарно по дну річки. При цьому<br> загерметизований, без
+                    екіпажу,
+                    «Маус» отримував по кабелю керування та електроживлення для руху від іншого «Мауса», який перебував
+                    на
+                    суходолі.
+                    <br>
+                    В бою ці танки не були випробувані. Обидва дослідних екземпляри підірвали самі німці під час наступу
+                    частин Червоної Армії на полігон. У 1946 році пошкоджені машини вивезли в СРСР,<br> де зі збережених
+                    деталей був зібраний один танк. Він випробовувався обстрілом на артилерійському полігоні і нині
+                    зберігається як експонат в музеї бронетанкових військ в Кубинці,<br> під Москвою.
+                    <br>
+                    Однак є й інші відомості. У книзі «Конструктор бойових машин» Лениздат 1988, йдеться: «Тоді ж
+                    з'ясувалося, що „Маус“ був виготовлений в трьох примірниках. Про його бойове<br> застосування
+                    свідчень
+                    немає. Однак на бойові позиції дві машини все-таки виводили: одна з них виявилася в місті Цоссені
+                    перед
+                    входом в будівлю німецького генерального штабу, а друга <br>стояла в охороні рейхсканцелярії в
+                    Берліні.
+                    Ну а третя, як уже говорилося, дісталася нам у підірваному вигляді на Куммерсдорфському
+                    полігоні.»<br>
+                </p>
+            </div>
+        </div>
+        <hr align="left">
+        <div>
+            <h2>
+                Дивися також
+            </h2>
+            <div>
+                <ul>
+                    <li><a
+                            href="https://uk.wikipedia.org/wiki/
+                %D0%91%D1%80%D0%BE%D0%BD%D0%B5%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%B2_%D0%9A%D1%83%D0%B1%D0%B8%D0%BD%D1%86%D1%96">
+                            Бронетанковий музей в Кубинці<a></li>
+                    <li><a
+                            href="F:\HTML-CSS\Курсова Частина 2\body2.html">Танки
+                            Е-100 </a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/Landkreuzer_P._1000_Ratte">Landkreuzer P 1000 Ratte<a>
+                    </li>
+                    <li><a href="https://uk.wikipedia.org/wiki/Landkreuzer_P._1500_Monster">Landkreuzer P 1500
+                            Monster<a>
+                    </li>
+                    <li><a href="https://uk.wikipedia.org/wiki/Panzer_VII_L%C3%B6we">Panzer VII Lowe<a></li>
+                    <li><a href="https://uk.wikipedia.org/wiki/Panzer_IX/X">Panzer IX/X<a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="part-div part-div-right">
+        <table>
+            <tr>
+                <th colspan="2" class="th-nazva">
+                    Panzerkampfwagen VIII Maus
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Тип
+                </th>
+                <td>
+                    надважкий танк
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Походження
+                </th>
+                <td>
+                    Третій Рейх
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="th-nazva">
+                    Історія використання
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Оператори
+                </th>
+                <td>
+                    Третій Рейх
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Війни
+                </th>
+                <td>
+                    Друга світова війна
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="th-nazva">
+                    Історія виробництва
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Розробник
+                </th>
+                <td>
+                    Фердинанд Порше
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Виготовлення
+                </th>
+                <td>
+                    1943-1945
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Вироблена кількість
+                </th>
+                <td>
+                    2 прототипи (один незавершиний)
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2" class="th-nazva">
+                    Характеристики
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Вага
+                </th>
+                <td>
+                    188 тонн
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Довжина
+                </th>
+                <td>
+                    10.2 метрів
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Ширина
+                </th>
+                <td>
+                    3.63 метрів
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Висота
+                </th>
+                <td>
+                    3.71 метрів
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Екіпаж
+                </th>
+                <td>
+                    6
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Броня
+                </th>
+                <td>
+                    50-220 мм
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Головне озброєння
+                </th>
+                <td>
+                    128 мм гармата KwK 44 L/55 (68 набоїв)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Другорядне озброєння
+                </th>
+                <td>
+                    75 мм гармата KwK 44 L/36,5 (спарена) (100 набоїв), 7,92×57 мм кулемет MG-34 (спарений) (1.000
+                    набоїв)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Двигун
+                </th>
+                <td>
+                    Daimler-Benz MB 509, 1.080 кс (794 КВт)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Питома потужність
+                </th>
+                <td>
+                    5,74 кс/т
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Дорожній просвіт
+                </th>
+                <td>
+                    0.5 м
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Операційна дальність
+                </th>
+                <td>
+                    190 км
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Швидкість
+                </th>
+                <td>
+                    89 км/год
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr align="left">
+    <footer class="footer">
+     Copyright 2023
+    </footer>
+</body>
+
+</html>
